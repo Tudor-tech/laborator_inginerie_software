@@ -1,4 +1,5 @@
 package org.example.parkinglot.entities;
+
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
