@@ -32,7 +32,7 @@ public class UserBean {
         List<UserDto> dtos = new ArrayList<>();
 
         for (User user : users) {
-            UserDto dto = new UserDto(user.getEmail(), user.getId(), user.getPassword(), user.getEmail());
+            UserDto dto = new UserDto(user.getUsername(), user.getId(), user.getPassword(), user.getEmail());
             dtos.add(dto);
         }
         return dtos;
