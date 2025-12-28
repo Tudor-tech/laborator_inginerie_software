@@ -83,6 +83,9 @@ public class CarsBean {
         car.setParkingSpot(parkingSpot);
 
         User oldUser = car.getOwner();
+        if(oldUser.getId().equals(userId)){
+            return;
+        }
         oldUser.getCars().remove(car);
 
         User user = entityManager.find(User.class, userId);
