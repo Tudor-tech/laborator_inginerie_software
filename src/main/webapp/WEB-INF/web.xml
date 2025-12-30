@@ -4,6 +4,10 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
+    <security-role>
+        <role-name>INVOICING</role-name>
+    </security-role>
+
     <login-config>
         <auth-method>FORM</auth-method>
         <realm-name>jdbcRealmParkingLot</realm-name>
